@@ -2,4 +2,11 @@
 System.Console.WriteLine("Введите трехзначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-System.Console.WriteLine($"Вторая цифра числа = {(num / 10) % 10}");
+if (99 < num && num < 1000)
+{
+    System.Console.WriteLine($"Вторая цифра числа = {(num / 10) % 10}");
+}
+else
+{
+    System.Console.WriteLine("Вы ввели не трехзначное число.");
+}
